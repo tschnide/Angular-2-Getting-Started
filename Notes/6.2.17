@@ -1,0 +1,14 @@
+//Format for .js import/export
+
+    export:
+    export class Name{
+
+    }
+
+    import:
+    import { Name } from
+    './Name'
+
+//Format for angular import/export
+
+    
