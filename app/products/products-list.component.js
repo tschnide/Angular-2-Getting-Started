@@ -24,7 +24,9 @@ var ProductListComponent = (function () {
     };
     /* ******************************************************************
     *  On initialization this sets _productService (refer to constructor)
-    *  getProducts is getProducts() is from products.service
+    *  getProducts is getProducts() from products.service.
+    *  Basically this makes sure that the component is loaded before the
+    *  service gets used.
     *********************************************************************/
     ProductListComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -38,7 +40,6 @@ var ProductListComponent = (function () {
 }());
 ProductListComponent = __decorate([
     core_1.Component({
-        selector: 'pm-products',
         moduleId: module.id,
         templateUrl: 'product-list.component.html',
         styleUrls: ['product-list.component.css'] // relative 

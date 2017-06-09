@@ -3,7 +3,6 @@ import { IProduct } from './product';
 import { ProductService } from './products.service'; 
  
 @Component({
-    selector: 'pm-products',
     moduleId: module.id, //allows relative paths for templateUrl and styleUrls see below
     templateUrl: 'product-list.component.html', // relative 
     styleUrls: ['product-list.component.css'] // relative 

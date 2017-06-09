@@ -21,9 +21,10 @@ var ProductService = (function () {
         this._productUrl = 'api/products/products.json';
     }
     /**********************************************************
-     *
-     *
-     */
+     * An Observable allows you to subscribe and listen for
+     * changes.
+     * .map maps to json in this case
+     **********************************************************/
     ProductService.prototype.getProducts = function () {
         return this._http.get(this._productUrl)
             .map(function (response) { return response.json(); })
