@@ -15,6 +15,12 @@ export class ProductService {
 
     }
 
+
+    /**********************************************************
+     * An Observable allows you to subscribe and listen for 
+     * changes.
+     * .map maps to json in this case
+     **********************************************************/
     getProducts(): Observable<IProduct[]> {
         return this._http.get(this._productUrl)
             .map((response: Response) => <IProduct[]> response.json())

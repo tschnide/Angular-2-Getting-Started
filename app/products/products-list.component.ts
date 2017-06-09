@@ -26,6 +26,12 @@ export class ProductListComponent implements OnInit {
         this.showImage = !this.showImage;
     }
 
+    /* ******************************************************************
+    *  On initialization this sets _productService (refer to constructor)
+    *  getProducts is getProducts() from products.service.
+    *  Basically this makes sure that the component is loaded before the
+    *  service gets used.
+    *********************************************************************/
     ngOnInit(): void {
         this._productService.getProducts()
             .subscribe(products => this.products = products,

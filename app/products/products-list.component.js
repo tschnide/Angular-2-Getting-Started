@@ -22,6 +22,10 @@ var ProductListComponent = (function () {
     ProductListComponent.prototype.toggleImage = function () {
         this.showImage = !this.showImage;
     };
+    /* ******************************************************************
+    *  On initialization this sets _productService (refer to constructor)
+    *  getProducts is getProducts() is from products.service
+    *********************************************************************/
     ProductListComponent.prototype.ngOnInit = function () {
         var _this = this;
         this._productService.getProducts()

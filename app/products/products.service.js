@@ -20,6 +20,10 @@ var ProductService = (function () {
         this._http = _http;
         this._productUrl = 'api/products/products.json';
     }
+    /**********************************************************
+     *
+     *
+     */
     ProductService.prototype.getProducts = function () {
         return this._http.get(this._productUrl)
             .map(function (response) { return response.json(); })
